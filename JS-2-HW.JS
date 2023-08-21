@@ -48,15 +48,15 @@ function Person(name, age){
     this.addAge = () => {age++;}
 }
 
-let krishna = new Person('Krishna', 29);
-let apeksha = new Person('Apeksha', 27);
+let kevin = new Person('Kevin', 28);
+let amber = new Person('Amber', 26);
 
-console.log(krishna.printInfo())
-krishna.addAge()
-krishna.addAge()
-krishna.addAge()
-console.log(krishna.printInfo())
-console.log(apeksha.printInfo())
+console.log(kevin.printInfo())
+kevin.addAge()
+kevin.addAge()
+kevin.addAge()
+console.log(kevin.printInfo())
+console.log(amber.printInfo())
 
 // Use an arrow to create the printInfo method
 
@@ -82,31 +82,9 @@ const isStringGreaterThan10 = (string) => {
     })
 }
 
-isStringGreaterThan10('applebeeshaha')
-isStringGreaterThan10('apple')
+isStringGreaterThan10('cranberryjuice')
+isStringGreaterThan10('juice')
 
 .then( (result) => {
     console.log(`Big Word`)
 })
-//Sad Reject path
-.catch( (error) => {
-    console.log(`Small Number of characters`)
-})
-
-// 8kyu - Even or Odd
-
-function evenOrOdd(number) {
-    if (number % 2 == 0){
-      return `Even`
-    } else {
-      return 'Odd'
-    }
-  }
-
-// 8kyu DNA to RNA
-
-function DNAtoRNA(dna) {
-    let newdna = dna.replace(/T/g, 'U');
-    return newdna;
-  }
-
